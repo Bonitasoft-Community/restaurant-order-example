@@ -1,0 +1,274 @@
+{
+  "id" : "menu",
+  "name" : "menu",
+  "type" : "page",
+  "uuid" : "69a7ba75-69d5-41ac-8242-86b228df88c0",
+  "modelVersion" : "2.4",
+  "lastUpdate" : 1688998806072,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "caption" : {
+            "type" : "interpolation"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "headers" : {
+            "type" : "constant",
+            "value" : [ ]
+          },
+          "content" : {
+            "type" : "expression",
+            "value" : "availableCategories"
+          },
+          "columnsKey" : {
+            "type" : "constant",
+            "value" : [
+              "name",
+              "picture"
+            ]
+          },
+          "selectedRow" : {
+            "type" : "variable",
+            "value" : "selectedCategory"
+          },
+          "striped" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "condensed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "bordered" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "9d7aea28-f9d4-483e-a85c-bfd73a824bf2",
+        "hasValidationError" : false,
+        "id" : "pbTable"
+      }
+    ],
+    [
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "256e8719-971c-442d-b04e-b70915056665",
+        "hasValidationError" : false,
+        "id" : "menuItem",
+        "binding" : {
+          "menuItemName" : "availableCategories[0].name",
+          "menuItemPicture" : "availableCategories[0].picture"
+        }
+      },
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "731e4948-5d0f-4b59-b0dc-cbc268be024b",
+        "hasValidationError" : false,
+        "id" : "menuItem",
+        "binding" : {
+          "menuItemName" : "availableCategories[1].name",
+          "menuItemPicture" : "availableCategories[1].picture"
+        }
+      }
+    ],
+    [
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "85150b55-fe75-4d92-8e71-ab9c7aa384ef",
+        "hasValidationError" : false,
+        "id" : "menuItem",
+        "binding" : {
+          "menuItemName" : "availableCategories[2].name",
+          "menuItemPicture" : "availableCategories[2].picture"
+        }
+      },
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "c06f57fd-d1b0-4d58-aef9-bd5349a2bd20",
+        "hasValidationError" : false,
+        "id" : "menuItem",
+        "binding" : {
+          "menuItemName" : "availableCategories[3].name",
+          "menuItemPicture" : "availableCategories[3].picture"
+        }
+      }
+    ],
+    [
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "20c36e7c-d2cc-4c3c-b772-a43fdc7a4082",
+        "hasValidationError" : false,
+        "id" : "menuItem",
+        "binding" : {
+          "menuItemName" : "availableCategories[4].name",
+          "menuItemPicture" : "availableCategories[4].picture"
+        }
+      },
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "00168af5-8162-45eb-88f7-ff59c9103f86",
+        "hasValidationError" : false,
+        "id" : "menuItem",
+        "binding" : {
+          "menuItemName" : "availableCategories[5].name",
+          "menuItemPicture" : "availableCategories[5].picture"
+        }
+      }
+    ]
+  ],
+  "variables" : {
+    "selectedCategory" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "availableCategories" : {
+      "type" : "json",
+      "value" : [
+        "[{\"picture\": \"https://upload.wikimedia.org/wikipedia/commons/8/88/Food_-_Fastfood_menu_--_Smart-Servier.png\", \"name\": \"Menu\"}, {\"picture\": \"\", \"name\": \"Kids Menu\"}, {\"picture\": \"\", \"name\":  \"Sandwiches\"}, {\"picture\": \"\", \"name\": \"Salads\"}, {\"picture\": \"\", \"name\": \"Desserts\"}, {\"picture\": \"\", \"name\": \"Drinks\"}]"
+      ],
+      "exposed" : false
+    },
+    "picture" : {
+      "type" : "constant",
+      "value" : [
+        "https://upload.wikimedia.org/wikipedia/commons/8/88/Food_-_Fastfood_menu_--_Smart-Servier.png"
+      ],
+      "exposed" : false
+    }
+  },
+  "assets" : [
+    {
+      "id" : "1fccf49d-5256-48ba-a6a6-c3c147ef05d0",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "449b44fc-ac48-4e97-be3c-ba7697b46518",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}
