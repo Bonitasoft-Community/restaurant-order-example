@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="acmeRestaurant" version="1.0" profile="User" homePage="orders" state="ACTIVATED" layout="custompage_layoutWithoutMenuBonitaCustom" theme="custompage_themeBonita">
+        <displayName>ACME Restaurant</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_orderStatus" token="orders"/>
+            <applicationPage customPage="custompage_menu" token="menu"/>
+        </applicationPages>
+        <applicationMenus/>
+    </application>
+</applications>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="8.0.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.myacme.sample.model.MenuItem">
+            <fields>
+                <field type="STRING" length="255" name="title" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="description" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="price" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="picture" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="alternativeText" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.myacme.sample.model.OrderItem">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="quantity" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="price" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.myacme.sample.model.RestaurantOrder">
+            <fields>
+                <field type="LONG" length="255" name="tableNumber" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.myacme.sample.model.OrderItem" fetchType="LAZY" name="items" nullable="true" collection="true"/>
+                <field type="OFFSETDATETIME" length="255" name="dateTime" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.myacme.sample.model.TableOrderCheck">
+            <fields>
+                <field type="LONG" length="255" name="tableId" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.myacme.sample.model.RestaurantOrder" fetchType="LAZY" name="orders" nullable="true" collection="true"/>
+                <field type="FLOAT" length="255" name="total" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="findByStatusAndTableId" content="SELECT t &#13;&#10;FROM TableOrderCheck t &#13;&#10;WHERE t.tableId = :tableId&#13;&#10;AND t.status = :status&#13;&#10;ORDER BY t.persistenceId ASC" returnType="com.myacme.sample.model.TableOrderCheck">
+                    <queryParameters>
+                        <queryParameter name="tableId" className="java.lang.Long"/>
+                        <queryParameter name="status" className="java.lang.String"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes>
+                <index name="INDEX_1">
+                    <fieldNames>
+                        <fieldName>status</fieldName>
+                        <fieldName>tableId</fieldName>
+                    </fieldNames>
+                </index>
+            </indexes>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

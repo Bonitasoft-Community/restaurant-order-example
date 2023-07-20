@@ -8,10 +8,11 @@
   <packaging>pom</packaging>
   <modules>
     <module>app</module>
+    <module>bdm</module>
   </modules>
   <properties>
-    <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
     <maven.compiler.release>11</maven.compiler.release>
+    <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
     <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
     <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
     <bonita-project-maven-plugin.version>0.1.0</bonita-project-maven-plugin.version>

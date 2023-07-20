@@ -1,0 +1,804 @@
+{
+  "id" : "payCheck",
+  "name" : "payCheck",
+  "type" : "form",
+  "uuid" : "31697381-d017-4b07-b699-c450579e5e24",
+  "modelVersion" : "2.4",
+  "lastUpdate" : 1689839875204,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "a04e1959-9237-49d4-b645-4ef0fb11463e",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "0732d7ff-4c3b-4c37-bed6-37fbbfe216ae",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "f9455f37-91dd-4784-8729-446d8405b632",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "description" : "Auto generate ui for business object \"com.myacme.sample.model.TableOrderCheck\"",
+                "rows" : [
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "22cce618-d114-4ef0-bae7-77835abf14a0",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "description" : "\"com.myacme.sample.model.TableOrderCheck\" object from \"tableOrderCheck_1\" variable",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "TableOrderCheck"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "d30fff0f-9dc6-4f65-8777-65279cd6b97c",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "headers" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "Table Id",
+                                  "Total",
+                                  "Status"
+                                ]
+                              },
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "caption" : {
+                                "type" : "constant"
+                              },
+                              "condensed" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "bordered" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "selectedRow" : {
+                                "type" : "variable",
+                                "value" : "tableOrderCheck_1_selected"
+                              },
+                              "columnsKey" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "tableId",
+                                  "total",
+                                  "status"
+                                ]
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "content" : {
+                                "type" : "expression",
+                                "value" : "tableOrderCheck_1"
+                              },
+                              "zebraStriping" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "326425f2-f9b0-43a3-92de-1f5cdd7fe135",
+                            "hasValidationError" : false,
+                            "id" : "pbTable",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 11,
+                              "sm" : 11,
+                              "xs" : 11,
+                              "lg" : 11
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!tableOrderCheck_1_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 11
+                              }
+                            },
+                            "reference" : "03899556-2704-4cd3-98e6-b80f3f61ff29",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "description" : "Display \"TableOrderCheck\" details when a line is selected in the table above",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12
+                                  },
+                                  "propertyValues" : { },
+                                  "reference" : "19816917-f7d9-45c7-a045-bd744a924a28",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "description" : "\"com.myacme.sample.model.RestaurantOrder\" object from \"tableOrderCheck_1_orders_selected.orders\" variable",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "md" : 12,
+                                          "sm" : 12,
+                                          "xs" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "level" : {
+                                            "type" : "constant",
+                                            "value" : "Level 4"
+                                          },
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "RestaurantOrder"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "left"
+                                          },
+                                          "dimension" : {
+                                            "type" : "constant",
+                                            "value" : 12
+                                          }
+                                        },
+                                        "reference" : "6885bf94-e3d3-4f81-ad08-b0f8fc9bb0c5",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTitle",
+                                        "description" : ""
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "md" : 12,
+                                          "sm" : 12,
+                                          "xs" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "headers" : {
+                                            "type" : "constant",
+                                            "value" : [
+                                              "Date Time",
+                                              "Status"
+                                            ]
+                                          },
+                                          "allowHtml" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "caption" : {
+                                            "type" : "constant"
+                                          },
+                                          "condensed" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "bordered" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "selectedRow" : {
+                                            "type" : "variable",
+                                            "value" : "tableOrderCheck_1_orders_selected"
+                                          },
+                                          "columnsKey" : {
+                                            "type" : "constant",
+                                            "value" : [
+                                              "dateTime",
+                                              "status"
+                                            ]
+                                          },
+                                          "dimension" : {
+                                            "type" : "constant",
+                                            "value" : 12
+                                          },
+                                          "content" : {
+                                            "type" : "expression",
+                                            "value" : "tableOrderCheck_1_selected.orders"
+                                          },
+                                          "zebraStriping" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "striped" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          }
+                                        },
+                                        "reference" : "7e817ab8-6e9d-4ad6-9f8b-307c0d1b5168",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTable",
+                                        "description" : ""
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "container",
+                                        "dimension" : {
+                                          "md" : 11,
+                                          "sm" : 11,
+                                          "xs" : 11,
+                                          "lg" : 11
+                                        },
+                                        "propertyValues" : {
+                                          "repeatedCollection" : {
+                                            "type" : "variable"
+                                          },
+                                          "hidden" : {
+                                            "type" : "expression",
+                                            "value" : "!tableOrderCheck_1_orders_selected"
+                                          },
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "dimension" : {
+                                            "type" : "constant",
+                                            "value" : 11
+                                          }
+                                        },
+                                        "reference" : "1b9dee77-4a53-4b1c-9862-4b1e346c74b4",
+                                        "hasValidationError" : false,
+                                        "id" : "pbContainer",
+                                        "description" : "Display \"RestaurantOrder\" details when a line is selected in the table above",
+                                        "rows" : [
+                                          [
+                                            {
+                                              "type" : "container",
+                                              "dimension" : {
+                                                "xs" : 12
+                                              },
+                                              "propertyValues" : { },
+                                              "reference" : "4225e0f9-faac-4668-86eb-525ea10ee221",
+                                              "hasValidationError" : false,
+                                              "id" : "pbContainer",
+                                              "description" : "\"com.myacme.sample.model.OrderItem\" object from \"tableOrderCheck_1_orders_selected.item\" variable",
+                                              "rows" : [
+                                                [
+                                                  {
+                                                    "type" : "component",
+                                                    "dimension" : {
+                                                      "md" : 12,
+                                                      "sm" : 12,
+                                                      "xs" : 12,
+                                                      "lg" : 12
+                                                    },
+                                                    "propertyValues" : {
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "level" : {
+                                                        "type" : "constant",
+                                                        "value" : "Level 4"
+                                                      },
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "text" : {
+                                                        "type" : "interpolation",
+                                                        "value" : "OrderItem"
+                                                      },
+                                                      "alignment" : {
+                                                        "type" : "constant",
+                                                        "value" : "left"
+                                                      },
+                                                      "dimension" : {
+                                                        "type" : "constant",
+                                                        "value" : 12
+                                                      }
+                                                    },
+                                                    "reference" : "2b45b6ff-9afb-4d21-beab-3ef6518f525b",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbTitle",
+                                                    "description" : ""
+                                                  }
+                                                ],
+                                                [
+                                                  {
+                                                    "type" : "component",
+                                                    "dimension" : {
+                                                      "md" : 12,
+                                                      "sm" : 12,
+                                                      "xs" : 12,
+                                                      "lg" : 12
+                                                    },
+                                                    "propertyValues" : {
+                                                      "headers" : {
+                                                        "type" : "constant",
+                                                        "value" : [
+                                                          "Name",
+                                                          "Quantity",
+                                                          "Price"
+                                                        ]
+                                                      },
+                                                      "allowHtml" : {
+                                                        "type" : "constant",
+                                                        "value" : true
+                                                      },
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "caption" : {
+                                                        "type" : "constant"
+                                                      },
+                                                      "condensed" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "bordered" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "selectedRow" : {
+                                                        "type" : "variable",
+                                                        "value" : "tableOrderCheck_1_orders_selected"
+                                                      },
+                                                      "columnsKey" : {
+                                                        "type" : "constant",
+                                                        "value" : [
+                                                          "name",
+                                                          "quantity",
+                                                          "price"
+                                                        ]
+                                                      },
+                                                      "dimension" : {
+                                                        "type" : "constant",
+                                                        "value" : 12
+                                                      },
+                                                      "content" : {
+                                                        "type" : "expression",
+                                                        "value" : "tableOrderCheck_1_orders"
+                                                      },
+                                                      "zebraStriping" : {
+                                                        "type" : "constant",
+                                                        "value" : true
+                                                      },
+                                                      "allowHTML" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "striped" : {
+                                                        "type" : "constant",
+                                                        "value" : true
+                                                      }
+                                                    },
+                                                    "reference" : "57156ac2-0136-4c80-86c0-09e02c83cff9",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbTable",
+                                                    "description" : ""
+                                                  }
+                                                ]
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "removeItem" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Pay check"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita/apps/acmeRestaurant/orders/"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Start process"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "valueToAdd" : {
+                    "type" : "expression"
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  }
+                },
+                "reference" : "36d74584-4a40-49ed-b896-4eeecae2d5dc",
+                "hasValidationError" : false,
+                "id" : "pbButton",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHtml" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!formOutput._submitError.message"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+                  },
+                  "label" : {
+                    "type" : "interpolation"
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "7b5b0d2a-dc44-486b-836b-ab877348c7d8",
+                "hasValidationError" : false,
+                "id" : "pbText",
+                "description" : ""
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "variables" : {
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{ }"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){",
+        "\tconst liElements = $data.formOutput._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "tableOrderCheck" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByStatusAndTableId [com.myacme.sample.model.TableOrderCheck]\",\"businessObjectName\":\"TableOrderCheck\",\"query\":{\"name\":\"findByStatusAndTableId\",\"displayName\":\"findByStatusAndTableId\"},\"id\":\"com.myacme.sample.model.TableOrderCheck\",\"filters\":[{\"name\":\"tableId\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{sessionInfo.user_id}}\"},{\"name\":\"status\",\"type\":\"STRING\",\"collection\":false,\"value\":\"ACTIVE\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "tableOrderCheck_orders_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "tableOrderCheck_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "tableOrderCheck_orders" : {
+      "type" : "url",
+      "value" : [
+        "{{tableOrderCheck_orders_selected|lazyRef:'items'}}"
+      ],
+      "exposed" : false
+    },
+    "sessionInfo" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/unusedId"
+      ],
+      "exposed" : false
+    },
+    "tableOrderCheck_1" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByStatusAndTableId [com.myacme.sample.model.TableOrderCheck]\",\"businessObjectName\":\"TableOrderCheck\",\"query\":{\"name\":\"findByStatusAndTableId\",\"displayName\":\"findByStatusAndTableId\"},\"id\":\"com.myacme.sample.model.TableOrderCheck\",\"filters\":[{\"name\":\"tableId\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{sessionInfo.user_id}}\"},{\"name\":\"status\",\"type\":\"STRING\",\"collection\":false,\"value\":\"ACTIVE\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "tableOrderCheck_1_orders" : {
+      "type" : "url",
+      "value" : [
+        "{{tableOrderCheck_1_orders_selected|lazyRef:'items'}}"
+      ],
+      "exposed" : false
+    },
+    "tableOrderCheck_1_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "tableOrderCheck_1_orders_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    }
+  },
+  "assets" : [
+    {
+      "id" : "3c9434e1-c739-402e-b0a5-b9828181b358",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "30ae7a14-9b39-4ec5-9aa5-d2b6dfd9693b",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}
