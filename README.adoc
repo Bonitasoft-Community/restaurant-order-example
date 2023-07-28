@@ -1,0 +1,62 @@
+:doctype: book
+:toc: left
+:toclevels: 3
+:sectnums:
+:icons: font
+:source-highlighter: highlightjs
+:idprefix:
+:idseparator: -
+:sectlinks:
+:sectanchors:
+:linkcss: false
+
+:short-bonita-version: 8.0
+:bonita-studio: 2023.1
+:doc-url: https://documentation.bonitasoft.com/bonita/8.0
+:java-version: 11
+= Restaurant Order Example
+
+The project **restaurant-order-example** is a Bonita project built with **Bonita {bonita-studio}**  **Community** version written in `groovy` language. 
+
+It contains processes at a restaurant where clients can order food from their tables. In this example, we suppose that every table is associated to a device where clients can place orders. Technically each table device is considered as a user in the organization and it is connected to a dedicated application for clients. Employees are using the Bonita User Application to knwo their tasks.
+It is part of the #BonitaExpress journey. It demonstrates how to focus on some accessibility aspects on your applications, create and use fragments on your interfaces built with UI Designer and poupulate widgets using variables.
+
+== Features
+
+* How to create accessible applications (and evaluate them using an external tool)
+* How to define a layout without menu (based on Bonita's layoutWithoutMenu)
+* How to create a fragment
+* How to populate widgets with variables
+* How to create a contract and retrieve the user's input
+* How to associate actions to your buttons, for starting a process and adding to collection
+* How to use the link widget to instantiate a process
+
+== Getting started
+
+* Use "Production" environment (it should be selected as active). It is already configured with parameters and actor mappings.
+* The project contains 3 different diagrams: 
+ - ConfigurationDiagram
+ - GetAndPayCheckDiagram
+ - OrderTakingDiagram
+ 
+First, launch the process contained inside the ConfigurationDiagram. You may add new items manually or you can simply click on Submit and it will add some items on the menu for the demo. Then, deploy the client application defined under Application descriptors in your project, choose to be logged by default as '1table'. Once the application launched on your browser, you should be able to click on the "Place an order" button that will lead you to an interface displaying the menu.
+On another browser, login as a kitchen chef (for example helen.kelly) and open the Bonita User Application. Once an order has been placed, you should be able to see a "Prepare meals" task.
+On another browser, login as a waiter (for example walter.bates) and open the Bonita User Application. Once the chef has finished the "Prepare meals" task, you should be able to see a "Bring meals to table" task.
+In parallel, on the first browser, client side, you shoul be able to follow the status of the order.
+
+For more details, refer to: https://community.bonitasoft.com/blog
+
+== Developing
+
+Prerequisite:
+
+- **Bonita {bonita-studio}** 
+
+== Links
+
+. Webinar replay Stop#6: https://www.bonitasoft.com/videos/
+. Repository: https://github.com/Bonitasoft-Community/restaurant-order-example
+. Issue tracker: https://github.com/Bonitasoft-Community/restaurant-order-example/issues
+.. In case of sensitive bugs like security vulnerabilities, please contact
+    adoption@bonitasoft.com directly instead of using issue tracker. We value your effort
+    to improve the security and privacy of this project!
