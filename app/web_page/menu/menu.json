@@ -3,8 +3,9 @@
   "name" : "menu",
   "type" : "page",
   "uuid" : "69a7ba75-69d5-41ac-8242-86b228df88c0",
-  "modelVersion" : "2.4",
-  "lastUpdate" : 1689778065188,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.4",
+  "lastUpdate" : 1699366604005,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

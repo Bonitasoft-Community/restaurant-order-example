@@ -3,8 +3,9 @@
   "name" : "prepareMealsForm",
   "type" : "form",
   "uuid" : "327a6d09-9fba-4d23-838f-b53d54415267",
-  "modelVersion" : "2.4",
-  "lastUpdate" : 1689838726042,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.4",
+  "lastUpdate" : 1699366604147,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

@@ -3,8 +3,9 @@
   "name" : "payCheck",
   "type" : "form",
   "uuid" : "31697381-d017-4b07-b699-c450579e5e24",
-  "modelVersion" : "2.4",
-  "lastUpdate" : 1689839875204,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.4",
+  "lastUpdate" : 1699366604084,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

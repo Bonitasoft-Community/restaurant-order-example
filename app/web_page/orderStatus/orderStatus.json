@@ -3,8 +3,9 @@
   "name" : "orderStatus",
   "type" : "page",
   "uuid" : "bfc86d61-7594-4a43-8229-c8a4bddaf99d",
-  "modelVersion" : "2.4",
-  "lastUpdate" : 1689847803596,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.4",
+  "lastUpdate" : 1699366604052,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

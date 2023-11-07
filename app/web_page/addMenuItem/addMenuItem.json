@@ -3,8 +3,9 @@
   "name" : "addMenuItem",
   "type" : "form",
   "uuid" : "f600744a-88ba-4d28-8fd8-a4e7c8d0bd0b",
-  "modelVersion" : "2.4",
-  "lastUpdate" : 1689838684624,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.4",
+  "lastUpdate" : 1699366603863,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

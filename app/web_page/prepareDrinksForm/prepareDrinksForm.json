@@ -3,8 +3,9 @@
   "name" : "prepareDrinksForm",
   "type" : "form",
   "uuid" : "129774fa-b327-48b2-8fe8-fe3e217c51f0",
-  "modelVersion" : "2.4",
-  "lastUpdate" : 1689838713059,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.4",
+  "lastUpdate" : 1699366604115,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

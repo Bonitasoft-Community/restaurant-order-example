@@ -1,9 +1,4 @@
-bin
-.classpath
-.settings
-target/
-node/
-node_modules/
+
 
 /src-providedGroovy
 /h2_database
